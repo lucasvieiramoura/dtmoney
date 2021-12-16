@@ -18,9 +18,9 @@ export function NewTransactionModal({isOpen, onRequestClose} :NewTransactionModa
     const [category, setCategory] = useState('');
     const [type, setType] = useState('deposit');
 
-    function handleCreateNewTransaction(event : FormEvent) {
-        event.preventDefault()
-       const data = {
+    function handleCreateNewTransaction(event: FormEvent) {
+        event.preventDefault();
+        const data = {
             title,
             value,
             category,
@@ -61,7 +61,7 @@ export function NewTransactionModal({isOpen, onRequestClose} :NewTransactionModa
                         isActive ={type==='deposit'}
                         activeColor='green'
                     >
-                        <img src={incomeImg} alt="Entra" />
+                        <img src={incomeImg} alt="Entrada" />
                         <span>Entrada</span>
                     </RadioBox>
 
